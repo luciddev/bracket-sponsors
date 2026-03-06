@@ -1,464 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basketball Mayhem 2026 - Syndicate Header Images</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0f1117;
-      color: #e1e4e8;
-      min-height: 100vh;
-    }
-    .header {
-      background: linear-gradient(135deg, #1a1e2e 0%, #2d1f3d 100%);
-      border-bottom: 1px solid #2a2e3a;
-      padding: 2rem 2rem 1.5rem;
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(90deg, #58a6ff, #a78bfa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .header p {
-      color: #8b949e;
-      font-size: 0.95rem;
-    }
-    .controls {
-      display: flex;
-      justify-content: center;
-      gap: 0.75rem;
-      padding: 1.25rem 2rem;
-      background: #161822;
-      border-bottom: 1px solid #2a2e3a;
-      flex-wrap: wrap;
-    }
-    .search-box {
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      border: 1px solid #2a2e3a;
-      background: #1c1f2e;
-      color: #e1e4e8;
-      font-size: 0.9rem;
-      width: 300px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .search-box:focus { border-color: #58a6ff; }
-    .count-badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      background: #1c1f2e;
-      border: 1px solid #2a2e3a;
-      color: #8b949e;
-      font-size: 0.85rem;
-    }
-    .count-badge strong { color: #58a6ff; margin-right: 0.3rem; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-      gap: 1.25rem;
-      padding: 1.5rem 2rem 3rem;
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-    .card {
-      background: #161822;
-      border: 1px solid #2a2e3a;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: border-color 0.2s, transform 0.15s;
-    }
-    .card:hover {
-      border-color: #58a6ff;
-      transform: translateY(-2px);
-    }
-    .card-img-wrap {
-      position: relative;
-      background: #1c1f2e;
-      aspect-ratio: 4.5 / 1;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .card-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .card-img-wrap .placeholder {
-      color: #484d58;
-      font-size: 0.85rem;
-    }
-    .card-info {
-      padding: 0.85rem 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .call-letters {
-      display: inline-block;
-      background: #58a6ff20;
-      color: #58a6ff;
-      font-weight: 700;
-      font-size: 0.8rem;
-      padding: 0.25rem 0.6rem;
-      border-radius: 6px;
-      white-space: nowrap;
-      letter-spacing: 0.02em;
-    }
-    .call-letters.unknown {
-      background: #f8514920;
-      color: #f85149;
-    }
-    .title {
-      font-size: 0.9rem;
-      color: #c9d1d9;
-      flex: 1;
-    }
-    .ids {
-      font-size: 0.75rem;
-      color: #484d58;
-      white-space: nowrap;
-    }
-    @media (max-width: 600px) {
-      .grid { grid-template-columns: 1fr; padding: 1rem; }
-      .header h1 { font-size: 1.3rem; }
-      .search-box { width: 100%; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basketball Bracket Sponsors - Header Images</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: #eee; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 20px; }
+h1 { text-align: center; color: #e94560; margin-bottom: 8px; font-size: 1.8rem; }
+.subtitle { text-align: center; color: #888; margin-bottom: 20px; font-size: 0.9rem; }
+.search-box { display: block; width: 100%; max-width: 500px; margin: 0 auto 30px; padding: 12px 16px; border-radius: 8px; border: 1px solid #333; background: #16213e; color: #eee; font-size: 1rem; }
+.search-box:focus { outline: none; border-color: #e94560; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; max-width: 1400px; margin: 0 auto; }
+.card { background: #16213e; border-radius: 12px; overflow: hidden; border: 1px solid #333; transition: transform 0.2s, border-color 0.2s; }
+.card:hover { transform: translateY(-2px); border-color: #e94560; }
+.card img { width: 100%; height: 200px; object-fit: cover; display: block; background: #0f3460; }
+.card .info { padding: 14px; }
+.card .title { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 6px; }
+.card .badge { display: inline-block; background: #e94560; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-right: 6px; }
+.card .meta { color: #888; font-size: 0.8rem; margin-top: 4px; }
+.card .meta span { margin-right: 12px; }
+.placeholder { width: 100%; height: 200px; background: #0f3460; display: flex; align-items: center; justify-content: center; color: #555; font-size: 0.9rem; }
+.count { text-align: center; color: #888; margin-bottom: 10px; font-size: 0.85rem; }
+</style>
 </head>
 <body>
-  <div class="header">
-    <h1>Basketball Mayhem 2026</h1>
-    <p>Syndicate Header Images Gallery</p>
+<h1>Basketball Bracket Sponsors</h1>
+<p class="subtitle">Header Images Gallery &mdash; 2026 Season</p>
+<p class="count" id="count">Showing 22 of 22 custom headers</p>
+<input type="text" class="search-box" placeholder="Search by call letters, title, company..." id="search">
+<div class="grid" id="grid">
+<div class="card" data-search="keyc-tv basketball mayhem 2026 keyc cbs 745529743">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzc0NTUyOTc0M19zcG9ydF8xODQ5NzU4X3N0YW5kYXJkXzE3NzE2MTgxNjYucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="KEYC-TV header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">KEYC-TV</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>KEYC CBS</span><span>Account: 745529743</span><span>App: 1849758</span></div>
   </div>
-  <div class="controls">
-    <input type="text" class="search-box" placeholder="Search by call letters, title, or account..." id="search">
-    <div class="count-badge"><strong id="count">40</strong> unique headers shown</div>
+</div>
+<div class="card" data-search="kifi bracket boss 2026 local news 8 445378081">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzQ0NTM3ODA4MV9zcG9ydF8xODYwNjgzX3N0YW5kYXJkXzE3NzIxMjU3MDUuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="KIFI header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">KIFI</span>Bracket Boss 2026</div>
+    <div class="meta"><span>Local News 8</span><span>Account: 445378081</span><span>App: 1860683</span></div>
   </div>
-  <div class="grid" id="grid"></div>
-
-  <script>
-    const images = [
-      {
-            "call": "WKLH-FM",
-            "title": "Basketball Mayhem 2026",
-            "account": "944529688",
-            "app_id": "1849720",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNDEwMDkxNTY4X3Nwb3J0XzE4NDkyMzlfc3RhbmRhcmRfMTc2OTAyMDk2NC5qcGciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "WHQG-FM",
-            "title": "Murray Mayhem 2026",
-            "account": "169949347",
-            "app_id": "1849724",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMTY5OTQ5MzQ3X3Nwb3J0XzE4NDk3MjRfc3RhbmRhcmRfMTc3MjcyNzc4My5qcGciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "WAQY-FM",
-            "title": "Rock 102 s Bracket Brawl 2026",
-            "account": "912000468",
-            "app_id": "1849733",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvOTEyMDAwNDY4X3Nwb3J0XzE4NDk3MzNfc3RhbmRhcmRfMTc3MjQ4MTEyOS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "WLZX-FM",
-            "title": "College Hoopla 2026",
-            "account": "123712099",
-            "app_id": "1849734",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMTIzNzEyMDk5X3Nwb3J0XzE4NDk3MzRfc3RhbmRhcmRfMTc3MjQ3MjM4NS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "WYMG-FM",
-            "title": "100 5 WYMG March Mania 2026 ",
-            "account": "272395554",
-            "app_id": "1849748",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMjcyMzk1NTU0X3Nwb3J0XzE4NDk3NDhfc3RhbmRhcmRfMTc3MTMzMTc0Mi5qcGciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "WDBR-FM",
-            "title": "103 7 WDBR March Mildness 2026 ",
-            "account": "244961660",
-            "app_id": "1849749",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMjQ0OTYxNjYwX3Nwb3J0XzE4NDk3NDlfc3RhbmRhcmRfMTc3MjcyNjExMS5qcGciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KEYC-TV",
-            "title": "Basketball Mayhem 2026",
-            "account": "745529743",
-            "app_id": "1849758",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNzQ1NTI5NzQzX3Nwb3J0XzE4NDk3NThfc3RhbmRhcmRfMTc3MTYxODE2Ni5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "WRXS-FM",
-            "title": "Blue Suede Shooters 2026",
-            "account": "566671713",
-            "app_id": "1849762",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNTY2NjcxNzEzX3Nwb3J0XzE4NDk3NjJfc3RhbmRhcmRfMTc3MjczMzQyOS5qcGciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KSJQ-FM",
-            "title": "Double Bonus Bracket 2026",
-            "account": "315354771",
-            "app_id": "1849763",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMzE1MzU0NzcxX3Nwb3J0XzE4NDk3NjNfc3RhbmRhcmRfMTc3MjM5MDM3NS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "WFXH",
-            "title": "Dave Mahoney s March to Rockville 2026",
-            "account": "923538950",
-            "app_id": "1849764",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvOTIzNTM4OTUwX3Nwb3J0XzE4NDk3NjRfc3RhbmRhcmRfMTc3MzE1NjY5My5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "PenTeleData Basketball Mayhem 2026",
-            "account": "781197837",
-            "app_id": "1849766",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNzgxMTk3ODM3X3Nwb3J0XzE4NDk3NjZfc3RhbmRhcmRfMTc3MjIyMjQ3NC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "The Catch the King Bracket Challenge 2026",
-            "account": "529964260",
-            "app_id": "1852906",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNTI5OTY0MjYwX3Nwb3J0XzE4NTI5MDZfc3RhbmRhcmRfMTc3MTY5NzYyOS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KALL",
-            "title": "Million Dollar Bracket Challenge 2026",
-            "account": "8671513",
-            "app_id": "1855269",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvODY3MTUxM19zcG9ydF8xODU1MjY5X3N0YW5kYXJkXzE3NzI2NDY0MjguanBnIiwiYnVja2V0IjoiYXB0aXZhZGEtZmlsZXMiLCJlZGl0cyI6eyJyb3RhdGUiOm51bGwsInJlc2l6ZSI6eyJ3aWR0aCI6MTI4MCwiaGVpZ2h0Ijo3MjAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6MTAwLCJzbWFydFN1YnNhbXBsZSI6dHJ1ZSwiZWZmb3J0Ijo0fSwib3BlcmF0aW9ucyI6W3sib3BlcmF0aW9uIjoic3RyaXAifV19fQ=="
-      },
-      {
-            "call": "KOVO",
-            "title": "The Million Dollar Bracket Challenge 2026",
-            "account": "553412273",
-            "app_id": "1855270",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNTUzNDEyMjczX3Nwb3J0XzE4NTUyNzBfc3RhbmRhcmRfMTc3MjU2NzI2Ny5qcGciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "Denver Sports 5K Bracket Challenge",
-            "account": "293616270",
-            "app_id": "1855288",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMjkzNjE2MjcwX3Nwb3J0XzE4NTUyODhfc3RhbmRhcmRfMTc3MjQ4MDM5Ny5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "The",
-            "title": "BOB and TOM Show Basketball Mayhem 2026",
-            "account": "686920905",
-            "app_id": "1855289",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNjg2OTIwOTA1X3Nwb3J0XzE4NTUyODlfc3RhbmRhcmRfMTc3MjY0NTkzOC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KBHP-FM",
-            "title": "100 3 The Bull Bracket Challenge 2026",
-            "account": "799960755",
-            "app_id": "1855290",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNzk5OTYwNzU1X3Nwb3J0XzE4NTUyOTBfc3RhbmRhcmRfMTc3MjU2Mzk4Mi5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "Basketball Mayhem 2026",
-            "account": "305729749",
-            "app_id": "1855292",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMzA1NzI5NzQ5X3Nwb3J0XzE4NTUyOTJfc3RhbmRhcmRfMTc3MjU2NjE0My5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KCJK",
-            "title": "Bracket Mayhem 2026",
-            "account": "929967293",
-            "app_id": "1855294",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvOTI5OTY3MjkzX3Nwb3J0XzE4NTUyOTRfc3RhbmRhcmRfMTc3MjY0NTcwMC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KKCS",
-            "title": "Bracket Mayhem 2026",
-            "account": "878808595",
-            "app_id": "1855296",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvODc4ODA4NTk1X3Nwb3J0XzE4NTUyOTZfc3RhbmRhcmRfMTc3MjY0NDk5My5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KFBZ",
-            "title": "Bracket Mayhem 2026",
-            "account": "60443019",
-            "app_id": "1855298",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNjA0NDMwMTlfc3BvcnRfMTg1NTI5OF9zdGFuZGFyZF8xNzcyNjQ0MzYxLnBuZyIsImJ1Y2tldCI6ImFwdGl2YWRhLWZpbGVzIiwiZWRpdHMiOnsicm90YXRlIjpudWxsLCJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJ3ZWJwIjp7InF1YWxpdHkiOjEwMCwic21hcnRTdWJzYW1wbGUiOnRydWUsImVmZm9ydCI6NH0sIm9wZXJhdGlvbnMiOlt7Im9wZXJhdGlvbiI6InN0cmlwIn1dfX0="
-      },
-      {
-            "call": "KNRQ",
-            "title": "Bracket Buster 2026",
-            "account": "960315173",
-            "app_id": "1855303",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvOTYwMzE1MTczX3Nwb3J0XzE4NTUzMDNfc3RhbmRhcmRfMTc3MjY1MjQ0OS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "March Mayhem 2026",
-            "account": "186197298",
-            "app_id": "1855308",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMTg2MTk3Mjk4X3Nwb3J0XzE4NTUzMDhfc3RhbmRhcmRfMTc3MjU1NDk3Mi5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KFBD",
-            "title": "Bracket Mayhem 2026",
-            "account": "913895992",
-            "app_id": "1855316",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvOTEzODk1OTkyX3Nwb3J0XzE4NTUzMTZfc3RhbmRhcmRfMTc3MjY0MzczOC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KFTZ",
-            "title": "Bracket Mayhem 2026",
-            "account": "851463272",
-            "app_id": "1855318",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvODUxNDYzMjcyX3Nwb3J0XzE4NTUzMThfc3RhbmRhcmRfMTc3MjY0MzExOC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KDZA",
-            "title": "Bracket Mayhem 2026",
-            "account": "277453722",
-            "app_id": "1855321",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMjc3NDUzNzIyX3Nwb3J0XzE4NTUzMjFfc3RhbmRhcmRfMTc3MjY0MjU2MS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KEKB",
-            "title": "Bracket Mayhem 2026",
-            "account": "523290800",
-            "app_id": "1855324",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNTIzMjkwODAwX3Nwb3J0XzE4NTUzMjRfc3RhbmRhcmRfMTc3MjY0MTgzNS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KNFO",
-            "title": "Bracket Mayhem 2026",
-            "account": "455688392",
-            "app_id": "1855326",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNDU1Njg4MzkyX3Nwb3J0XzE4NTUzMjZfc3RhbmRhcmRfMTc3MjY0MTIxNy5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "Basketball Mayhem 2026",
-            "account": "629859668",
-            "app_id": "1855328",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNjI5ODU5NjY4X3Nwb3J0XzE4NTUzMjhfc3RhbmRhcmRfMTc3MjU3MzA0OC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KRED-FM",
-            "title": "Basketball Mayhem 2026",
-            "account": "55044134",
-            "app_id": "1860701",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNTUwNDQxMzRfc3BvcnRfMTg2MDcwMV9zdGFuZGFyZF8xNzcyNzMzNzgxLnBuZyIsImJ1Y2tldCI6ImFwdGl2YWRhLWZpbGVzIiwiZWRpdHMiOnsicm90YXRlIjpudWxsLCJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJ3ZWJwIjp7InF1YWxpdHkiOjEwMCwic21hcnRTdWJzYW1wbGUiOnRydWUsImVmZm9ydCI6NH0sIm9wZXJhdGlvbnMiOlt7Im9wZXJhdGlvbiI6InN0cmlwIn1dfX0="
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "Basketball Mayhem 2026",
-            "account": "273796200",
-            "app_id": "1861143",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMjczNzk2MjAwX3Nwb3J0XzE4NjExNDNfc3RhbmRhcmRfMTc3MzA1NTA2OC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "Basketball Mayhem 2026",
-            "account": "587907051",
-            "app_id": "1861145",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNTg3OTA3MDUxX3Nwb3J0XzE4NjExNDVfc3RhbmRhcmRfMTc3MzA1NDc4NS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KMXE",
-            "title": "Bracket Mayhem 2026",
-            "account": "928057567",
-            "app_id": "1861666",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvOTI4MDU3NTY3X3Nwb3J0XzE4NjE2NjZfc3RhbmRhcmRfMTc3MzE1NDgyNS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KQIL",
-            "title": "Bracket Mayhem 2026",
-            "account": "253154504",
-            "app_id": "1861667",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMjUzMTU0NTA0X3Nwb3J0XzE4NjE2Njdfc3RhbmRhcmRfMTc3MzE1NDUyNC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KVUU",
-            "title": "Bracket Mayhem 2026",
-            "account": "63936133",
-            "app_id": "1861668",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNjM5MzYxMzNfc3BvcnRfMTg2MTY2OF9zdGFuZGFyZF8xNzczMTU0MTg1LnBuZyIsImJ1Y2tldCI6ImFwdGl2YWRhLWZpbGVzIiwiZWRpdHMiOnsicm90YXRlIjpudWxsLCJyZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ0b0Zvcm1hdCI6IndlYnAiLCJ3ZWJwIjp7InF1YWxpdHkiOjEwMCwic21hcnRTdWJzYW1wbGUiOnRydWUsImVmZm9ydCI6NH0sIm9wZXJhdGlvbnMiOlt7Im9wZXJhdGlvbiI6InN0cmlwIn1dfX0="
-      },
-      {
-            "call": "KSMT",
-            "title": "Bracket Mayhem 2026",
-            "account": "518888901",
-            "app_id": "1861669",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNTE4ODg4OTAxX3Nwb3J0XzE4NjE2Njlfc3RhbmRhcmRfMTc3MzE1MzczNS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KKCH",
-            "title": "Bracket Mayhem 2026",
-            "account": "438994949",
-            "app_id": "1861670",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNDM4OTk0OTQ5X3Nwb3J0XzE4NjE2NzBfc3RhbmRhcmRfMTc3MzE1MzMxMi5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "KRMR",
-            "title": "Bracket Mayhem 2026",
-            "account": "146662132",
-            "app_id": "1861671",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvMTQ2NjYyMTMyX3Nwb3J0XzE4NjE2NzFfc3RhbmRhcmRfMTc3MzE1Mjc4Ny5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "Basketball Mayhem 2026",
-            "account": "780828853",
-            "app_id": "1862695",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvNzgwODI4ODUzX3Nwb3J0XzE4NjI2OTVfc3RhbmRhcmRfMTc3MzUxOTQxOS5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      },
-      {
-            "call": "UNKNOWN",
-            "title": "Basketball Mayhem 2026",
-            "account": "987819714",
-            "app_id": "1862696",
-            "url": "https://cdn3.aptivada.com/eyJrZXkiOiJmaWxlcy9hcHBfZ3JhcGhpY3MvOTg3ODE5NzE0X3Nwb3J0XzE4NjI2OTZfc3RhbmRhcmRfMTc3MzUxOTIyNC5wbmciLCJidWNrZXQiOiJhcHRpdmFkYS1maWxlcyIsImVkaXRzIjp7InJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjcyMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5IjoxMDAsInNtYXJ0U3Vic2FtcGxlIjp0cnVlLCJlZmZvcnQiOjR9LCJvcGVyYXRpb25zIjpbeyJvcGVyYXRpb24iOiJzdHJpcCJ9XX19"
-      }
-];
-
-    const grid = document.getElementById('grid');
-    const search = document.getElementById('search');
-    const countEl = document.getElementById('count');
-
-    function render(filter) {
-      const q = (filter || '').toLowerCase();
-      const filtered = images.filter(img =>
-        !q || img.call.toLowerCase().includes(q) || img.title.toLowerCase().includes(q) || img.account.includes(q) || img.app_id.includes(q)
-      );
-      countEl.textContent = filtered.length;
-      grid.innerHTML = filtered.map(img => `
-        <div class="card">
-          <div class="card-img-wrap">
-            <img src="${img.url}" alt="${img.call} - ${img.title}" loading="lazy" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=placeholder>Image not available</span>'">
-          </div>
-          <div class="card-info">
-            <span class="call-letters ${img.call === 'UNKNOWN' ? 'unknown' : ''}">${img.call}</span>
-            <span class="title">${img.title}</span>
-            <span class="ids">${img.account} / ${img.app_id}</span>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    search.addEventListener('input', e => render(e.target.value));
-    render();
-  </script>
+</div>
+<div class="card" data-search="kred-fm basketball mayhem 2026 98.3 kred 55044134">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzU1MDQ0MTM0X3Nwb3J0XzE4NjA3MDFfc3RhbmRhcmRfMTc3MjczMzc4MS5wbmciLCAiYnVja2V0IjogImFwdGl2YWRhLWZpbGVzIiwgImVkaXRzIjogeyJyb3RhdGUiOiBudWxsLCAicmVzaXplIjogeyJ3aWR0aCI6IDEyODAsICJoZWlnaHQiOiA3MjAsICJmaXQiOiAiaW5zaWRlIiwgIndpdGhvdXRFbmxhcmdlbWVudCI6IHRydWV9LCAidG9Gb3JtYXQiOiAid2VicCIsICJ3ZWJwIjogeyJxdWFsaXR5IjogMTAwLCAic21hcnRTdWJzYW1wbGUiOiB0cnVlLCAiZWZmb3J0IjogNH0sICJvcGVyYXRpb25zIjogW3sib3BlcmF0aW9uIjogInN0cmlwIn1dfX0=" alt="KRED-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">KRED-FM</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>98.3 KRED</span><span>Account: 55044134</span><span>App: 1860701</span></div>
+  </div>
+</div>
+<div class="card" data-search="waqy-fm rock 102's bracket brawl 2026 rock 102 912000468">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzkxMjAwMDQ2OF9zcG9ydF8xODQ5NzMzX3N0YW5kYXJkXzE3NzI0ODExMjkucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WAQY-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WAQY-FM</span>Rock 102's Bracket Brawl 2026</div>
+    <div class="meta"><span>Rock 102</span><span>Account: 912000468</span><span>App: 1849733</span></div>
+  </div>
+</div>
+<div class="card" data-search="wdbr-fm 103.7 wdbr march mildness (2026) 103.7 fm 244961660">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzI0NDk2MTY2MF9zcG9ydF8xODQ5NzQ5X3N0YW5kYXJkXzE3NzI3MjYxMTEuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WDBR-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WDBR-FM</span>103.7 WDBR March Mildness (2026)</div>
+    <div class="meta"><span>103.7 FM</span><span>Account: 244961660</span><span>App: 1849749</span></div>
+  </div>
+</div>
+<div class="card" data-search="werv-fm basketball mayhem 2026 95.9 the river 928057567">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzkyODA1NzU2N19zcG9ydF8xODYxNjY2X3N0YW5kYXJkXzE3NzI3NDk0NzUuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WERV-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WERV-FM</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>95.9 The River</span><span>Account: 928057567</span><span>App: 1861666</span></div>
+  </div>
+</div>
+<div class="card" data-search="wfxh dave & mahoney's march to rockville 2026 rock 106.1 923538950">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzkyMzUzODk1MF9zcG9ydF8xODQ5NzY0X3N0YW5kYXJkXzE3NzA3NDU0NDcucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WFXH header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WFXH</span>Dave & Mahoney's March to Rockville 2026</div>
+    <div class="meta"><span>Rock 106.1</span><span>Account: 923538950</span><span>App: 1849764</span></div>
+  </div>
+</div>
+<div class="card" data-search="whqg-fm murray mayhem 2026 102.9 the hog 169949347">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzE2OTk0OTM0N19zcG9ydF8xODQ5NzI0X3N0YW5kYXJkXzE3NzI3Mjc3ODMuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WHQG-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WHQG-FM</span>Murray Mayhem 2026</div>
+    <div class="meta"><span>102.9 The Hog</span><span>Account: 169949347</span><span>App: 1849724</span></div>
+  </div>
+</div>
+<div class="card" data-search="wixy-fm basketball mayhem 2026 wixy 100.3 275364565">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzI3NTM2NDU2NV9zcG9ydF8xODU3MTU2X3N0YW5kYXJkXzE3NzEwOTA2NjIucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WIXY-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WIXY-FM</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>WIXY 100.3</span><span>Account: 275364565</span><span>App: 1857156</span></div>
+  </div>
+</div>
+<div class="card" data-search="wixy-hd2 basketball mayhem 2026 extra 96.9 fm 16990972">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzE2OTkwOTcyX3Nwb3J0XzE4NTcxNTdfc3RhbmRhcmRfMTc3MTA5MTgwOC5wbmciLCAiYnVja2V0IjogImFwdGl2YWRhLWZpbGVzIiwgImVkaXRzIjogeyJyb3RhdGUiOiBudWxsLCAicmVzaXplIjogeyJ3aWR0aCI6IDEyODAsICJoZWlnaHQiOiA3MjAsICJmaXQiOiAiaW5zaWRlIiwgIndpdGhvdXRFbmxhcmdlbWVudCI6IHRydWV9LCAidG9Gb3JtYXQiOiAid2VicCIsICJ3ZWJwIjogeyJxdWFsaXR5IjogMTAwLCAic21hcnRTdWJzYW1wbGUiOiB0cnVlLCAiZWZmb3J0IjogNH0sICJvcGVyYXRpb25zIjogW3sib3BlcmF0aW9uIjogInN0cmlwIn1dfX0=" alt="WIXY-HD2 header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WIXY-HD2</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>eXtra 96.9 FM</span><span>Account: 16990972</span><span>App: 1857157</span></div>
+  </div>
+</div>
+<div class="card" data-search="wkty basketball mayhem 2026 wkty 657849570">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzY1Nzg0OTU3MF9zcG9ydF8xODYwNjg1X3N0YW5kYXJkXzE3NzI3MjUwOTkuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WKTY header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WKTY</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>WKTY</span><span>Account: 657849570</span><span>App: 1860685</span></div>
+  </div>
+</div>
+<div class="card" data-search="wlrw-fm basketball mayhem 2026 mix 94.5 298808952">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzI5ODgwODk1Ml9zcG9ydF8xODU2NTUzX3N0YW5kYXJkXzE3NzEwMDQ3MjQucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WLRW-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WLRW-FM</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>Mix 94.5</span><span>Account: 298808952</span><span>App: 1856553</span></div>
+  </div>
+</div>
+<div class="card" data-search="wlzx-fm college hoopla 2026 lazer 99.3 123712099">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzEyMzcxMjA5OV9zcG9ydF8xODQ5NzM0X3N0YW5kYXJkXzE3NzI0NzIzODUucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WLZX-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WLZX-FM</span>College Hoopla 2026</div>
+    <div class="meta"><span>Lazer 99.3</span><span>Account: 123712099</span><span>App: 1849734</span></div>
+  </div>
+</div>
+<div class="card" data-search="wrxs-fm basketball mayhem 2026 wild 102.9 566671713">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzU2NjY3MTcxM19zcG9ydF8xODQ5NzYyX3N0YW5kYXJkXzE3NzI3MzcxMzkuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WRXS-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WRXS-FM</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>Wild 102.9</span><span>Account: 566671713</span><span>App: 1849762</span></div>
+  </div>
+</div>
+<div class="card" data-search="wymg-fm 100.5 wymg march mania (2026) wymg 100.5 fm 272395554">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzI3MjM5NTU1NF9zcG9ydF8xODQ5NzQ4X3N0YW5kYXJkXzE3NzEzMzE3NDIuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WYMG-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WYMG-FM</span>100.5 WYMG March Mania (2026)</div>
+    <div class="meta"><span>WYMG 100.5 FM</span><span>Account: 272395554</span><span>App: 1849748</span></div>
+  </div>
+</div>
+<div class="card" data-search="wyxy-fm basketball mayhem 2026 wyxy classic 99.1 566924417">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzU2NjkyNDQxN19zcG9ydF8xODU2NTU1X3N0YW5kYXJkXzE3NzEwMDQzMDIucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="WYXY-FM header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title"><span class="badge">WYXY-FM</span>Basketball Mayhem 2026</div>
+    <div class="meta"><span>WYXY Classic 99.1</span><span>Account: 566924417</span><span>App: 1856555</span></div>
+  </div>
+</div>
+<div class="card" data-search="unknown basketball mayhem 2026  920544684">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzkyMDU0NDY4NF9zcG9ydF8xODU3MDExX3N0YW5kYXJkXzE3NzEyNjAxOTMucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="Unknown header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title">Basketball Mayhem 2026</div>
+    <div class="meta"><span>Account: 920544684</span><span>App: 1857011</span></div>
+  </div>
+</div>
+<div class="card" data-search="unknown basketball mayhem 2026  529964260">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzUyOTk2NDI2MF9zcG9ydF8xODUyOTA2X3N0YW5kYXJkXzE3NzE4OTY0NDQucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="Unknown header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title">Basketball Mayhem 2026</div>
+    <div class="meta"><span>Account: 529964260</span><span>App: 1852906</span></div>
+  </div>
+</div>
+<div class="card" data-search="unknown basketball mayhem 2026  296717458">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzI5NjcxNzQ1OF9zcG9ydF8xODU1MzM1X3N0YW5kYXJkXzE3NzE1MzA1MDcuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="Unknown header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title">Basketball Mayhem 2026</div>
+    <div class="meta"><span>Account: 296717458</span><span>App: 1855335</span></div>
+  </div>
+</div>
+<div class="card" data-search="unknown basketball mayhem 2026  781197837">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzc4MTE5NzgzN19zcG9ydF8xODQ5NzY2X3N0YW5kYXJkXzE3NzIxMzgyNjUuanBnIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="Unknown header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title">Basketball Mayhem 2026</div>
+    <div class="meta"><span>Account: 781197837</span><span>App: 1849766</span></div>
+  </div>
+</div>
+<div class="card" data-search="unknown basketball mayhem 2026  315354771">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzMxNTM1NDc3MV9zcG9ydF8xODQ5NzYzX3N0YW5kYXJkXzE3NzE2MTE0OTkucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="Unknown header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title">Basketball Mayhem 2026</div>
+    <div class="meta"><span>Account: 315354771</span><span>App: 1849763</span></div>
+  </div>
+</div>
+<div class="card" data-search="unknown basketball mayhem 2026  523757345">
+  <img src="https://cdn3.aptivada.com/eyJrZXkiOiAiZmlsZXMvYXBwX2dyYXBoaWNzLzUyMzc1NzM0NV9zcG9ydF8xODYwMTI3X3N0YW5kYXJkXzE3NzI0Njg0MjgucG5nIiwgImJ1Y2tldCI6ICJhcHRpdmFkYS1maWxlcyIsICJlZGl0cyI6IHsicm90YXRlIjogbnVsbCwgInJlc2l6ZSI6IHsid2lkdGgiOiAxMjgwLCAiaGVpZ2h0IjogNzIwLCAiZml0IjogImluc2lkZSIsICJ3aXRob3V0RW5sYXJnZW1lbnQiOiB0cnVlfSwgInRvRm9ybWF0IjogIndlYnAiLCAid2VicCI6IHsicXVhbGl0eSI6IDEwMCwgInNtYXJ0U3Vic2FtcGxlIjogdHJ1ZSwgImVmZm9ydCI6IDR9LCAib3BlcmF0aW9ucyI6IFt7Im9wZXJhdGlvbiI6ICJzdHJpcCJ9XX19" alt="Unknown header" loading="lazy" onerror="this.outerHTML='<div class=\'placeholder\'>Image not available</div>'">
+  <div class="info">
+    <div class="title">Basketball Mayhem 2026</div>
+    <div class="meta"><span>Account: 523757345</span><span>App: 1860127</span></div>
+  </div>
+</div>
+</div>
+<script>
+const search = document.getElementById('search');
+const grid = document.getElementById('grid');
+const count = document.getElementById('count');
+const total = grid.children.length;
+search.addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  let shown = 0;
+  Array.from(grid.children).forEach(card => {
+    const match = !q || card.dataset.search.includes(q);
+    card.style.display = match ? '' : 'none';
+    if (match) shown++;
+  });
+  count.textContent = 'Showing ' + shown + ' of ' + total + ' custom headers';
+});
+</script>
 </body>
 </html>
