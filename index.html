@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Mayhem 2026 - Syndicate Header Images</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f1117;
+      color: #e1e4e8;
+      min-height: 100vh;
+    }
+    .header {
+      background: linear-gradient(135deg, #1a1e2e 0%, #2d1f3d 100%);
+      border-bottom: 1px solid #2a2e3a;
+      padding: 2rem 2rem 1.5rem;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(90deg, #58a6ff, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header p {
+      color: #8b949e;
+      font-size: 0.95rem;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1.25rem 2rem;
+      background: #161822;
+      border-bottom: 1px solid #2a2e3a;
+      flex-wrap: wrap;
+    }
+    .search-box {
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #2a2e3a;
+      background: #1c1f2e;
+      color: #e1e4e8;
+      font-size: 0.9rem;
+      width: 300px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-box:focus { border-color: #58a6ff; }
+    .count-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background: #1c1f2e;
+      border: 1px solid #2a2e3a;
+      color: #8b949e;
+      font-size: 0.85rem;
+    }
+    .count-badge strong { color: #58a6ff; margin-right: 0.3rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      gap: 1.25rem;
+      padding: 1.5rem 2rem 3rem;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #161822;
+      border: 1px solid #2a2e3a;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .card:hover {
+      border-color: #58a6ff;
+      transform: translateY(-2px);
+    }
+    .card-img-wrap {
+      position: relative;
+      background: #1c1f2e;
+      aspect-ratio: 4.5 / 1;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .card-img-wrap .placeholder {
+      color: #484d58;
+      font-size: 0.85rem;
+    }
+    .card-info {
+      padding: 0.85rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .call-letters {
+      display: inline-block;
+      background: #58a6ff20;
+      color: #58a6ff;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+    }
+    .call-letters.unknown {
+      background: #f8514920;
+      color: #f85149;
+    }
+    .title {
+      font-size: 0.9rem;
+      color: #c9d1d9;
+      flex: 1;
+    }
+    .ids {
+      font-size: 0.75rem;
+      color: #484d58;
+      white-space: nowrap;
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; padding: 1rem; }
+      .header h1 { font-size: 1.3rem; }
+      .search-box { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Basketball Mayhem 2026</h1>
+    <p>Syndicate Header Images Gallery</p>
+  </div>
+  <div class="controls">
+    <input type="text" class="search-box" placeholder="Search by call letters, title, or account..." id="search">
+    <div class="count-badge"><strong id="count">40</strong> unique headers shown</div>
+  </div>
+  <div class="grid" id="grid"></div>
+
+  <script>
+    const images = [
+      { call: "WKLH-FM", title: "Basketball Mayhem 2026", account: "944529688", app_id: "1849720", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/410091568_sport_1849239_standard_1769020964.jpg" },
+      { call: "WHQG-FM", title: "Murray Mayhem 2026", account: "169949347", app_id: "1849724", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/169949347_sport_1849724_standard_1772727783.jpg" },
+      { call: "WAQY-FM", title: "Rock 102's Bracket Brawl 2026", account: "912000468", app_id: "1849733", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/912000468_sport_1849733_standard_1772481129.png" },
+      { call: "WLZX-FM", title: "College Hoopla 2026", account: "123712099", app_id: "1849734", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/123712099_sport_1849734_standard_1772472385.png" },
+      { call: "WYMG-FM", title: "100.5 WYMG March Mania 2026", account: "272395554", app_id: "1849748", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/272395554_sport_1849748_standard_1771331742.jpg" },
+      { call: "WDBR-FM", title: "103.7 WDBR March Mildness 2026", account: "244961660", app_id: "1849749", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/244961660_sport_1849749_standard_1772726111.jpg" },
+      { call: "KEYC-TV", title: "Basketball Mayhem 2026", account: "745529743", app_id: "1849758", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/745529743_sport_1849758_standard_1771618166.png" },
+      { call: "WRXS-FM", title: "Blue Suede Shooters 2026", account: "566671713", app_id: "1849762", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/566671713_sport_1849762_standard_1772733429.jpg" },
+      { call: "KSJQ-FM", title: "Double Bonus Bracket 2026", account: "315354771", app_id: "1849763", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/315354771_sport_1849763_standard_1772390375.png" },
+      { call: "WFXH", title: "Dave Mahoney's March to Rockville 2026", account: "923538950", app_id: "1849764", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/923538950_sport_1849764_standard_1773156693.png" },
+      { call: "UNKNOWN", title: "PenTeleData Basketball Mayhem 2026", account: "781197837", app_id: "1849766", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/781197837_sport_1849766_standard_1772222474.png" },
+      { call: "UNKNOWN", title: "The Catch the King Bracket Challenge 2026", account: "529964260", app_id: "1852906", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/529964260_sport_1852906_standard_1771697629.png" },
+      { call: "KALL", title: "Million Dollar Bracket Challenge 2026", account: "8671513", app_id: "1855269", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/8671513_sport_1855269_standard_1772646428.jpg" },
+      { call: "KOVO", title: "The Million Dollar Bracket Challenge 2026", account: "553412273", app_id: "1855270", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/553412273_sport_1855270_standard_1772567267.jpg" },
+      { call: "UNKNOWN", title: "Denver Sports 5K Bracket Challenge", account: "293616270", app_id: "1855288", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/293616270_sport_1855288_standard_1772480397.png" },
+      { call: "The BOB and TOM Show", title: "Basketball Mayhem 2026", account: "686920905", app_id: "1855289", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/686920905_sport_1855289_standard_1772645938.png" },
+      { call: "KBHP-FM", title: "100.3 The Bull Bracket Challenge 2026", account: "799960755", app_id: "1855290", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/799960755_sport_1855290_standard_1772563982.png" },
+      { call: "UNKNOWN", title: "Basketball Mayhem 2026", account: "305729749", app_id: "1855292", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/305729749_sport_1855292_standard_1772566143.png" },
+      { call: "KCJK", title: "Bracket Mayhem 2026", account: "929967293", app_id: "1855294", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/929967293_sport_1855294_standard_1772645700.png" },
+      { call: "KKCS", title: "Bracket Mayhem 2026", account: "878808595", app_id: "1855296", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/878808595_sport_1855296_standard_1772644993.png" },
+      { call: "KFBZ", title: "Bracket Mayhem 2026", account: "60443019", app_id: "1855298", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/60443019_sport_1855298_standard_1772644361.png" },
+      { call: "KNRQ", title: "Bracket Buster 2026", account: "960315173", app_id: "1855303", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/960315173_sport_1855303_standard_1772652449.png" },
+      { call: "UNKNOWN", title: "March Mayhem 2026", account: "186197298", app_id: "1855308", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/186197298_sport_1855308_standard_1772554972.png" },
+      { call: "KFBD", title: "Bracket Mayhem 2026", account: "913895992", app_id: "1855316", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/913895992_sport_1855316_standard_1772643738.png" },
+      { call: "KFTZ", title: "Bracket Mayhem 2026", account: "851463272", app_id: "1855318", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/851463272_sport_1855318_standard_1772643118.png" },
+      { call: "KDZA", title: "Bracket Mayhem 2026", account: "277453722", app_id: "1855321", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/277453722_sport_1855321_standard_1772642561.png" },
+      { call: "KEKB", title: "Bracket Mayhem 2026", account: "523290800", app_id: "1855324", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/523290800_sport_1855324_standard_1772641835.png" },
+      { call: "KNFO", title: "Bracket Mayhem 2026", account: "455688392", app_id: "1855326", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/455688392_sport_1855326_standard_1772641217.png" },
+      { call: "UNKNOWN", title: "Basketball Mayhem 2026", account: "629859668", app_id: "1855328", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/629859668_sport_1855328_standard_1772573048.png" },
+      { call: "KRED-FM", title: "Basketball Mayhem 2026", account: "55044134", app_id: "1860701", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/55044134_sport_1860701_standard_1772733781.png" },
+      { call: "UNKNOWN", title: "Basketball Mayhem 2026", account: "273796200", app_id: "1861143", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/273796200_sport_1861143_standard_1773055068.png" },
+      { call: "UNKNOWN", title: "Basketball Mayhem 2026", account: "587907051", app_id: "1861145", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/587907051_sport_1861145_standard_1773054785.png" },
+      { call: "KMXE", title: "Bracket Mayhem 2026", account: "928057567", app_id: "1861666", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/928057567_sport_1861666_standard_1773154825.png" },
+      { call: "KQIL", title: "Bracket Mayhem 2026", account: "253154504", app_id: "1861667", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/253154504_sport_1861667_standard_1773154524.png" },
+      { call: "KVUU", title: "Bracket Mayhem 2026", account: "63936133", app_id: "1861668", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/63936133_sport_1861668_standard_1773154185.png" },
+      { call: "KSMT", title: "Bracket Mayhem 2026", account: "518888901", app_id: "1861669", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/518888901_sport_1861669_standard_1773153735.png" },
+      { call: "KKCH", title: "Bracket Mayhem 2026", account: "438994949", app_id: "1861670", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/438994949_sport_1861670_standard_1773153312.png" },
+      { call: "KRMR", title: "Bracket Mayhem 2026", account: "146662132", app_id: "1861671", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/146662132_sport_1861671_standard_1773152787.png" },
+      { call: "UNKNOWN", title: "Basketball Mayhem 2026", account: "780828853", app_id: "1862695", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/780828853_sport_1862695_standard_1773519419.png" },
+      { call: "UNKNOWN", title: "Basketball Mayhem 2026", account: "987819714", app_id: "1862696", url: "https://aptivada-files.s3.amazonaws.com/files/app_graphics/987819714_sport_1862696_standard_1773519224.png" }
+    ];
+
+    const grid = document.getElementById('grid');
+    const search = document.getElementById('search');
+    const countEl = document.getElementById('count');
+
+    function render(filter) {
+      const q = (filter || '').toLowerCase();
+      const filtered = images.filter(img =>
+        !q || img.call.toLowerCase().includes(q) || img.title.toLowerCase().includes(q) || img.account.includes(q) || img.app_id.includes(q)
+      );
+      countEl.textContent = filtered.length;
+      grid.innerHTML = filtered.map(img => `
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="${img.url}" alt="${img.call} - ${img.title}" loading="lazy" onerror="this.style.display='none';this.parentNode.innerHTML='<span class=placeholder>Image not available</span>'">
+          </div>
+          <div class="card-info">
+            <span class="call-letters ${img.call === 'UNKNOWN' ? 'unknown' : ''}">${img.call}</span>
+            <span class="title">${img.title}</span>
+            <span class="ids">${img.account} / ${img.app_id}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    search.addEventListener('input', e => render(e.target.value));
+    render();
+  </script>
+</body>
+</html>
